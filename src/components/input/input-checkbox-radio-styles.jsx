@@ -66,7 +66,6 @@ export default theme => {
         verticalAlign: 'top',
         paddingLeft: '4px',
         userSelect: 'none',
-        maxWidth: 'calc(100% - 16px)',
         fontSize: '16px',
         marginTop: '-2px',
       },
