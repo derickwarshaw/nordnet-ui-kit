@@ -16,9 +16,9 @@ describe('<Avatar />', () => {
     expect(wrapper.type()).to.equal('div');
   });
 
-  it('should have the class "root"', () => {
+  it('should have the class "avatar"', () => {
     const wrapper = shallow(<Avatar {...defaultProps} />);
-    expect(wrapper.hasClass(classes.root)).to.equal(true);
+    expect(wrapper.hasClass(classes.avatar)).to.equal(true);
   });
 
   it('should have the class small by default', () => {

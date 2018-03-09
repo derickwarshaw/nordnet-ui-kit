@@ -13,9 +13,9 @@ describe('<Badge />', () => {
     expect(wrapper.type()).to.equal('span');
   });
 
-  it('should have the class root', () => {
+  it('should have the class badge', () => {
     wrapper = shallow(<Badge classes={classes} />);
-    expect(wrapper.hasClass(classes.root)).to.equal(true);
+    expect(wrapper.hasClass(classes.badge)).to.equal(true);
   });
 
   it('should render children', () => {
@@ -40,6 +40,6 @@ describe('<Badge />', () => {
 
   it('should have 3 classes if a modifier and className is given', () => {
     wrapper = shallow(<Badge classes={classes} className="test" modifier="warning" />);
-    expect(wrapper.hasClass(classes.root) && wrapper.hasClass(classes.warning) && wrapper.hasClass('test')).to.equal(true);
+    expect(wrapper.hasClass(classes.badge) && wrapper.hasClass(classes.warning) && wrapper.hasClass('test')).to.equal(true);
   });
 });
