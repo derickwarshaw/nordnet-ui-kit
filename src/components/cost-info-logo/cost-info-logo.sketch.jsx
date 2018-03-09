@@ -1,8 +1,10 @@
 import React from 'react';
 import CostInfoLogo from './cost-info-logo';
 
-const symbols = {
-  CostInfoLogo: <CostInfoLogo />,
-};
-
-export default symbols;
+// eslint-disable-next-line import/prefer-default-export
+export const symbols = [
+  {
+    symbol: 'CostInfoLogo',
+    entity: <CostInfoLogo />,
+  },
+];

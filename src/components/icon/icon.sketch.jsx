@@ -1,8 +1,10 @@
 import React from 'react';
 import Icon from './icon';
 
-const symbols = {
-  'Icon/trash': <Icon.Trash />,
-};
-
-export default symbols;
+// eslint-disable-next-line import/prefer-default-export
+export const symbols = [
+  {
+    symbol: 'Icon/trash',
+    entity: <Icon.Trash />,
+  },
+];
