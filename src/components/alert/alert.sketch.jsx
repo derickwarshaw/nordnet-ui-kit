@@ -1,6 +1,7 @@
 import React from 'react';
 import Alert from './alert';
 
+// eslint-disable-next-line import/prefer-default-export
 export const symbols = [
   {
     symbol: 'Alert/default',
@@ -47,5 +48,3 @@ export const symbols = [
     ),
   },
 ];
-
-export default symbols;

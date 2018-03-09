@@ -1,6 +1,7 @@
 import React from 'react';
 import Badge from './badge';
 
+// eslint-disable-next-line import/prefer-default-export
 export const symbols = [
   {
     symbol: 'Badge/default',
@@ -19,5 +20,3 @@ export const symbols = [
     entity: <Badge modifier="success">Badge</Badge>,
   },
 ];
-
-export default symbols;

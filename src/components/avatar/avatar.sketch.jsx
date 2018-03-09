@@ -1,6 +1,7 @@
 import React from 'react';
 import Avatar from './avatar';
 
+// eslint-disable-next-line import/prefer-default-export
 export const symbols = [
   {
     symbol: 'Avatar/xs',
@@ -19,5 +20,3 @@ export const symbols = [
     entity: <Avatar size="lg">lg</Avatar>,
   },
 ];
-
-export default symbols;
