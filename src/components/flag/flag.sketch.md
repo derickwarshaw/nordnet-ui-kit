@@ -2,6 +2,6 @@
     
     <div>
       {symbols.map(({ symbol, entity }) => (
-        <div data-sketch-symbol={symbol}>{entity}</div>
+        <div data-sketch-symbol={symbol} key={symbol}>{entity}</div>
       ))}
     </div>
