@@ -7,7 +7,7 @@ export const styles = theme => {
   const { palette, typography, mixins } = theme;
 
   return {
-    root: {
+    badge: {
       ...mixins.basicBoxSizing,
       display: 'inline-block',
       fontSize: '12px',
@@ -45,7 +45,7 @@ function Badge({
   ...rest
 }) {
   const className = cn(
-    [classes.root],
+    [classes.badge],
     {
       [classes.success]: modifier === 'success',
       [classes.warning]: modifier === 'warning',
@@ -54,7 +54,11 @@ function Badge({
     classNameProp,
   );
 
-  return <span {...rest} className={className}>{children}</span>;
+  return (
+    <span {...rest} className={className}>
+      {children}
+    </span>
+  );
 }
 
 Badge.propTypes = {

@@ -7,7 +7,7 @@ export const styles = theme => {
   const { palette, typography, mixins } = theme;
 
   return {
-    root: {
+    avatar: {
       ...mixins.basicBoxSizing,
       display: 'flex',
       alignItems: 'center',
@@ -63,7 +63,7 @@ function Avatar({
     styleProp,
   );
 
-  const className = cn(classes.root, [classes[`${size}`]], classNameProp);
+  const className = cn(classes.avatar, [classes[`${size}`]], classNameProp);
 
   return (
     <div className={className} style={style} {...rest}>
