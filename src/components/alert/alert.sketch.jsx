@@ -10,7 +10,7 @@ export const symbols = [
   {
     symbol: 'Alert/vertical',
     entity: (
-      <Alert header="Alert" vertical>
+      <Alert header="Alert vertical" vertical>
         Alert text
       </Alert>
     ),
