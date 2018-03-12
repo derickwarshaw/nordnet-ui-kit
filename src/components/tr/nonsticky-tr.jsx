@@ -15,7 +15,7 @@ function NonStickyTr({ classes, className, children, size, border, ...rest }) {
     className,
   );
   return (
-    <tr {...omit(rest, 'theme', 'sheet')} className={usedClassName}>
+    <tr {...omit(rest, 'sticky', 'theme', 'sheet')} className={usedClassName}>
       {children}
     </tr>
   );
